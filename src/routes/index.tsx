@@ -3,7 +3,7 @@ import { useRoutes } from 'react-router-dom';
 import { routingArray } from './routingArray';
 
 const Router = () => {
-  return useRoutes(routingArray.filter((path) => path.isPublic));
+  return useRoutes(routingArray);
 };
 
 export default Router;

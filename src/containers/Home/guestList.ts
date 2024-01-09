@@ -1,0 +1,16 @@
+export const guestList = [
+  { id: '70294', name: 'Anna' },
+  { id: '84939', name: 'Arthur' },
+  { id: '74367', name: 'Erik and Meri' },
+  { id: '41716', name: 'Kolya' },
+  { id: '51507', name: 'Vahag and Ani' },
+  { id: '42245', name: 'Rafik' },
+  { id: '83124', name: 'Arno and Varduhi' },
+  { id: '78922', name: 'Arthur and Emma' },
+  { id: '83397', name: 'Arthur' },
+  { id: '15299', name: 'Marat' },
+  { id: '25242', name: 'Tigran and Diana' },
+  { id: '89254', name: 'Alex' },
+  { id: '34897', name: 'Gayane' },
+  { id: '44603', name: 'Melqon and Liana' },
+];
