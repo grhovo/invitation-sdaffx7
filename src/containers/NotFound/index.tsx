@@ -1,25 +1,24 @@
 import { memo } from 'react';
 
-import Typography from '@mui/material/Typography';
-import { useNavigate } from 'react-router-dom';
 import PAGE_ROUTES from '@routes/routingEnum';
+import StyledTypography from '@containers/common/StyledTypography';
+import { Stack } from '@mui/material';
+import pingvinashen from '@assets/images/pingvinashen.png';
 
-import { StyledButton, StyledContainer } from './styled';
+import { StyledContainer, StyledLink, StyledTextStack } from './styled';
 
 const NotFound = () => {
-  const navigate = useNavigate();
-  const handleRedirectHome = () => {
-    navigate(PAGE_ROUTES.HOME);
-  };
-
   return (
     <StyledContainer>
-      <Typography variant="h2" mb="16px">
-        Page not found
-      </Typography>
-      <StyledButton onClick={handleRedirectHome}>
-        Home page
-      </StyledButton>
+      <Stack sx={{ position: 'relative' }}>
+        <Stack position="absolute">
+          <img src={pingvinashen} alt="" />
+        </Stack>
+        <StyledTextStack>
+          <StyledTypography variant="h9">Ոտքերով խաչեր ենք արում, գնում ենք</StyledTypography>
+          <StyledLink href={PAGE_ROUTES.HOME} display="block">Home Page</StyledLink>
+        </StyledTextStack>
+      </Stack>
     </StyledContainer>
   );
 };
