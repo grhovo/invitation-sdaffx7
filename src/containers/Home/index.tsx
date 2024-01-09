@@ -7,6 +7,7 @@ import MyStepper from './Stepper';
 import Map from './Map';
 import Timer from './Timer';
 import Banner from './Banner';
+import InviteText from './InviteText';
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
         <Stack alignItems="center">
           <Timer />
           <MyStepper />
+          <InviteText />
           <Map />
         </Stack>
       </Stack>
