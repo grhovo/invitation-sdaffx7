@@ -7,7 +7,6 @@ import { StyledMuiTypography } from './styled';
 interface IStyledTypographyProps extends TypographyProps {
   color?: string;
   underLine?: boolean;
-  cursor?: string;
   isItalic?: boolean;
 }
 
@@ -15,7 +14,6 @@ const StyledTypography: FC<IStyledTypographyProps> = ({
   children,
   color,
   underLine,
-  cursor,
   isItalic,
   ...restProps
 }) => (
@@ -23,7 +21,6 @@ const StyledTypography: FC<IStyledTypographyProps> = ({
     {...restProps}
     color={color}
     underLine={underLine}
-    cursor={cursor}
     isItalic={isItalic}
   >
     {children}

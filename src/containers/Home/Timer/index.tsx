@@ -1,6 +1,5 @@
 import { useTimer } from 'react-timer-hook';
 import Stack from '@mui/material/Stack';
-import { Typography } from '@mui/material';
 
 import { StyledDivider } from './styled';
 import DateItem from './DateItem';
@@ -18,7 +17,6 @@ const Timer = () => {
 
   return (
     <Stack py="40px">
-      <Typography variant="h5" textTransform="uppercase" mb="20px" textAlign="center">IT REMAINS</Typography>
       <Stack direction="row">
         <DateItem date={days} text="Day" />
         <StyledDivider />

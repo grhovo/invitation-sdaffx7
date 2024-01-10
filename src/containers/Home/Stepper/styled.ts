@@ -6,7 +6,7 @@ import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 export const StyledIconBox = styled(Stack)(({ theme }) => ({
   width: 120,
   height: 120,
-  // background: theme.palette.primary.dark,
+  background: theme.palette.primary.dark,
   boxShadow: '0px 0px 30px 0 rgb(42 67 113 / 15%)',
   borderRadius: '50%',
   [theme.breakpoints.down('xs')]: {

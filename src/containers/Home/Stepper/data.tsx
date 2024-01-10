@@ -20,7 +20,7 @@ export const steps = [{
   place: 'Sports and Concerts Complex name after K. Demirchyan',
 }, {
   icon: () => <Icon src={dance} />,
-  text: 'Let\'s party begin!',
+  text: 'Let The Party Begin!',
   time: '18:00',
   path: 'https://yandex.com/maps/org/76916737047/?ll=44.533809%2C40.192637&z=17.29',
   place: 'Souvenir Restaurant and Cafe',

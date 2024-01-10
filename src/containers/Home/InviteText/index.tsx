@@ -12,23 +12,23 @@ const InviteText = () => {
 
   return (
     <Stack p="40px 20px" maxWidth="540px">
-      <StyledTypography isItalic variant="h3">
+      <StyledTypography isItalic variant="h3" textAlign="center">
         {`Dear ${guest?.name},`}
       </StyledTypography>
-      <StyledTypography isItalic variant="h8">
+      <StyledTypography isItalic variant="subtitle1" textAlign="center">
         You are warmly invited to join us in celebrating our wedding ceremony.
       </StyledTypography>
-      <StyledTypography isItalic variant="h8">
-        We eagerly look forward to seeing you there.
+      <StyledTypography isItalic variant="subtitle1" textAlign="center">
+        We look forward to seeing you there.
       </StyledTypography>
-      <StyledTypography isItalic variant="h8">
+      <StyledTypography isItalic variant="subtitle1" textAlign="center">
         We would prefer for you to be with us for every part of the day.
       </StyledTypography>
-      <StyledTypography isItalic variant="h8">
+      <StyledTypography isItalic variant="subtitle1" textAlign="center">
         However, if you can&apos;t  make it for the entire event, please join us as soon as you can
       </StyledTypography>
-      <StyledTypography isItalic variant="h8">
-        Bring an extremely high mood and your brightest smile with you.
+      <StyledTypography isItalic variant="subtitle1" textAlign="center">
+        Bring an extremely high mood and your brightest smile with you!
       </StyledTypography>
     </Stack>
   );

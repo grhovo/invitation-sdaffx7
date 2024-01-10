@@ -1,7 +1,7 @@
 export const guestList = [
-  { id: '70294', name: 'Hayk' },
-  { id: '70294', name: 'Siranush and Mihran' },
-  { id: '70294', name: 'Anna' },
+  { id: '70291', name: 'Hayk' },
+  { id: '79292', name: 'Siranush and Mihran' },
+  { id: '70287', name: 'Anna' },
   { id: '84939', name: 'Arthur' },
   { id: '74367', name: 'Erik and Meri' },
   { id: '41716', name: 'Kolya' },
