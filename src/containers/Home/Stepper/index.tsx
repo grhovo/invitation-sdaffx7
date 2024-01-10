@@ -9,7 +9,7 @@ import { StyledLine, StyledLink } from './styled';
 
 const MyStepper = () => {
   return (
-    <Stack maxWidth="500px" p="40px 20px">
+    <Stack maxWidth="500px" p="0 20px">
       <Stepper activeStep={2} orientation="vertical" connector={<StyledLine />}>
         {steps.map(({ icon, text, time, path, place }) => (
           <Step key={text} sx={{ width: '100%', display: 'flex', alignItems: 'flex-start' }}>

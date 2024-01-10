@@ -10,6 +10,7 @@ import Timer from './Timer';
 import Banner from './Banner';
 import InviteText from './InviteText';
 import { guestList } from './InviteText/guestList';
+import PenguinsImg from './PenguinsImg';
 
 const Home = () => {
   const { id } = useParams();
@@ -35,6 +36,7 @@ const Home = () => {
         <Banner />
         <Stack alignItems="center">
           <InviteText />
+          <PenguinsImg />
           <Timer />
           <MyStepper />
         </Stack>

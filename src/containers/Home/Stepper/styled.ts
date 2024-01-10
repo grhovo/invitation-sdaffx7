@@ -5,7 +5,7 @@ import Link from '@mui/material/Link';
 export const StyledIconBox = styled(Stack)(({ theme }) => ({
   width: 110,
   height: 110,
-  background: theme.palette.primary.dark,
+  // background: theme.palette.primary.dark,
   borderRadius: '50%',
   [theme.breakpoints.down('xs')]: {
     width: 90,

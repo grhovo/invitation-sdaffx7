@@ -5,7 +5,6 @@ export const StyledContainer = styled(Stack)(() => ({
   width: '100%',
   justifyContent: 'center',
   alignItems: 'center',
-  marginBottom: '20px',
 }));
 
 export const StyledImage = styled('img')(({ theme }) => ({
