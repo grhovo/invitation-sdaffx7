@@ -1,12 +1,11 @@
 import { memo } from 'react';
 
-import background from '@assets/images/background.png';
+import background from '@assets/images/background1.png';
 import Stack from '@mui/material/Stack';
 import NotFound from '@containers/NotFound';
 import { useParams } from 'react-router-dom';
 
 import MyStepper from './Stepper';
-import Map from './Map';
 import Timer from './Timer';
 import Banner from './Banner';
 import InviteText from './InviteText';
@@ -35,10 +34,9 @@ const Home = () => {
       <Stack justifyContent="center" alignItems="center" zIndex="1000">
         <Banner />
         <Stack alignItems="center">
+          <InviteText />
           <Timer />
           <MyStepper />
-          <InviteText />
-          <Map />
         </Stack>
       </Stack>
     </Stack>
