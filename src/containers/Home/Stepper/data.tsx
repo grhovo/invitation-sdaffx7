@@ -14,7 +14,7 @@ export const steps = [{
 {
   icon: () => <Icon src={zags} />,
   text: 'Wedding Ceremony!',
-  time: '15:00',
+  time: '15:15',
   path: 'https://yandex.com/maps/org/200050986571/?ll=44.483207%2C40.188295&z=17.09',
 }, {
   icon: () => <Icon src={dance} />,
