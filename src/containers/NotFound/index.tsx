@@ -1,11 +1,10 @@
 import { memo } from 'react';
 
-import PAGE_ROUTES from '@routes/routingEnum';
 import StyledTypography from '@containers/common/StyledTypography';
 import { Stack } from '@mui/material';
 import pingvinashen from '@assets/images/pingvinashen.png';
 
-import { StyledContainer, StyledLink, StyledTextStack } from './styled';
+import { StyledContainer, StyledTextStack } from './styled';
 
 const NotFound = () => {
   return (
@@ -15,8 +14,7 @@ const NotFound = () => {
           <img src={pingvinashen} alt="" />
         </Stack>
         <StyledTextStack>
-          <StyledTypography variant="h9">Ոտքերով խաչեր ենք արում, գնում ենք</StyledTypography>
-          <StyledLink href={PAGE_ROUTES.HOME} display="block">Home Page</StyledLink>
+          <StyledTypography variant="h9">Ոտքերով խաչեր ենք անում, գնում ենք</StyledTypography>
         </StyledTextStack>
       </Stack>
     </StyledContainer>

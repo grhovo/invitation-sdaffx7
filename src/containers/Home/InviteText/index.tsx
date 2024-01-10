@@ -10,7 +10,7 @@ const InviteText = () => {
 
   return (
     <>
-      { `Dear ${guest ? guest.name : 'friend'} you are invited...` }
+      { `Dear ${guest?.name}, you are invited...` }
     </>
   );
 };

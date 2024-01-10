@@ -1,6 +1,5 @@
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 
 export const StyledContainer = styled(Box)(({ theme }) => ({
   maxWidth: '320px',
@@ -22,11 +21,4 @@ export const StyledTextStack = styled(Box)(() => ({
   top: '33%',
   right: 'calc(-100% + 145px)',
   width: '180px',
-}));
-
-export const StyledLink = styled(Link)(({ theme }) => ({
-  color: theme.palette.primary.dark,
-  textDecorationColor: theme.palette.primary.dark,
-  fontSize: '14px',
-  fontWeight: 700,
 }));
