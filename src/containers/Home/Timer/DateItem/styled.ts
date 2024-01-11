@@ -6,6 +6,6 @@ export const StyledText = styled(StyledTypography)(({ theme }) => ({
     fontSize: '24px',
   },
   [theme.breakpoints.down('xs')]: {
-    fontSize: '16px',
+    fontSize: '19px',
   },
 }));
