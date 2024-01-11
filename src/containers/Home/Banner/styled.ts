@@ -9,11 +9,11 @@ export const StyledContainer = styled(Stack)(() => ({
 
 export const StyledImage = styled('img')(({ theme }) => ({
   height: '500px',
-  width: '100%',
   objectFit: 'contain',
   objectPosition: 'top center',
   top: 0,
   [theme.breakpoints.down('md')]: {
+    width: '100%',
     height: 'unset',
   },
 }));
