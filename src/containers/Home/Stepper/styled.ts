@@ -22,8 +22,8 @@ export const StyledImage = styled('img')(({ theme }) => ({
   marginLeft: '16px',
   marginTop: '6px',
   [theme.breakpoints.down('xs')]: {
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
 }));
 

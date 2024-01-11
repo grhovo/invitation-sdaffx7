@@ -13,6 +13,7 @@ import InviteText from './InviteText';
 import { guestList } from './InviteText/guestList';
 import PenguinsImg from './PenguinsImg';
 import { StyledContainer } from './styled';
+import { loadImage } from './helpers';
 
 const Home = () => {
   const { id } = useParams();
@@ -25,37 +26,20 @@ const Home = () => {
       canva,
     ];
 
-    async function loadImages() {
+    const loadImages = async () => {
       try {
         await Promise.all(imageUrls.map(loadImage));
         setImagesLoaded(true);
-        console.log('All images have loaded.');
       } catch (error) {
         console.error('Failed to load images:', error);
       }
-    }
+    };
 
     loadImages();
   }, []);
 
-  function loadImage(src:string) {
-    return new Promise((resolve, reject) => {
-      const image = new Image();
-
-      image.onload = () => {
-        resolve(image);
-      };
-
-      image.onerror = () => {
-        reject(new Error(`Failed to load image: ${src}`));
-      };
-
-      image.src = src;
-    });
-  }
-
   if (!imagesLoaded) {
-    return <>ggg</>;
+    return null;
   }
 
   if (!guest) {
