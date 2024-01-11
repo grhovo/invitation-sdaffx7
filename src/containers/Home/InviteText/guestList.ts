@@ -24,7 +24,7 @@ export const guestList = [
   { id: '24144', name: 'Marina And Arthur' },
   { id: '13055', name: 'Christine And Karen' },
   { id: '76874', name: 'Susanna' },
-  { id: '83397', name: 'Gohar And Edward' },
+  { id: '83397', name: 'Edward And Gohar' },
   { id: '40387', name: 'Mery And Edward' },
   { id: '22587', name: 'Erik And Inga' },
   { id: '32570', name: 'Ani And Vardan' },
