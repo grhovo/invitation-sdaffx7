@@ -55,7 +55,7 @@ const Home = () => {
   }
 
   if (!imagesLoaded) {
-    return null;
+    return <>ggg</>;
   }
 
   if (!guest) {
