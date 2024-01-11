@@ -1,6 +1,5 @@
 import { memo } from 'react';
 
-import background from '@assets/images/background1.png';
 import Stack from '@mui/material/Stack';
 import NotFound from '@containers/NotFound';
 import { useParams } from 'react-router-dom';
@@ -11,6 +10,7 @@ import Banner from './Banner';
 import InviteText from './InviteText';
 import { guestList } from './InviteText/guestList';
 import PenguinsImg from './PenguinsImg';
+import { StyledContainer } from './styled';
 
 const Home = () => {
   const { id } = useParams();
@@ -21,17 +21,7 @@ const Home = () => {
   }
 
   return (
-    <Stack
-      sx={{
-        height: '100vh',
-        width: '100%',
-        position: 'fixed',
-        zIndex: '1',
-        overflow: 'auto',
-        backgroundImage: `url(${background})`,
-        backgroundSize: 'cover',
-      }}
-    >
+    <StyledContainer>
       <Stack justifyContent="center" alignItems="center" zIndex="1000">
         <Banner />
         <Stack alignItems="center">
@@ -41,7 +31,7 @@ const Home = () => {
           <MyStepper />
         </Stack>
       </Stack>
-    </Stack>
+    </StyledContainer>
 
   );
 };
