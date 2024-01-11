@@ -8,11 +8,13 @@ export type CustomRouteObject = RouteObject & {
 }
 
 export const routingArray: CustomRouteObject[] = [
-  { path: PAGE_ROUTES.HOME, element: <Home />, isPublic: true },
-  { path: '*', element: <NotFound />, isPublic: true },
   {
+    path: PAGE_ROUTES.HOME,
+    element: <Home />,
+    isPublic: true,
     children: [
       { path: PAGE_ROUTES.GUEST, element: <Home /> },
     ],
   },
+  { path: '*', element: <NotFound />, isPublic: true },
 ];

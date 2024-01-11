@@ -1,5 +1,5 @@
 enum PAGE_ROUTES {
   HOME = '/',
-  GUEST = '/guest/:id',
+  GUEST = '/:id',
 }
 export default PAGE_ROUTES;
