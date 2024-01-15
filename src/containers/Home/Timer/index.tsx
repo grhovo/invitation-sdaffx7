@@ -6,7 +6,7 @@ import DateItem from './DateItem';
 
 const Timer = () => {
   const now = new Date();
-  const expiryTimestamp = new Date(now.getFullYear(), 0, 24, 15, 30, 0);
+  const expiryTimestamp = new Date(now.getFullYear(), 0, 24, 13, 30, 0);
 
   const {
     days,
