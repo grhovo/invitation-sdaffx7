@@ -1,24 +1,16 @@
 import { memo } from 'react';
 
-import StyledTypography from '@containers/common/StyledTypography';
-import { Stack } from '@mui/material';
-import pingvinashen from '@assets/images/pingvinashen.png';
+import { Stack, Typography } from '@mui/material';
 
-import { StyledContainer, StyledTextStack } from './styled';
+import { StyledContainer } from './styled';
 
-const NotFound = () => {
-  return (
-    <StyledContainer>
-      <Stack sx={{ position: 'relative' }}>
-        <Stack position="absolute">
-          <img src={pingvinashen} alt="" />
-        </Stack>
-        <StyledTextStack>
-          <StyledTypography variant="h9">Ոտքերով խաչեր ենք անում, գնում ենք</StyledTypography>
-        </StyledTextStack>
-      </Stack>
-    </StyledContainer>
-  );
-};
+// TODO: style text
+const NotFound = () => (
+  <StyledContainer>
+    <Stack sx={{ position: 'relative' }}>
+      <Typography>Page Not Found</Typography>
+    </Stack>
+  </StyledContainer>
+);
 
 export default memo(NotFound);

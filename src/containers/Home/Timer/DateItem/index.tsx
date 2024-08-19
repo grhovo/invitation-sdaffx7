@@ -16,7 +16,6 @@ const DateItem = ({ date, text } : IDateItem) => {
       </StyledText>
       <StyledText variant="h6" isItalic>
         {text}
-        {date !== 0 ? 's' : ''}
       </StyledText>
     </Stack>
   );
