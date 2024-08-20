@@ -1,13 +1,16 @@
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 
-export const StyledContainer = styled(Stack)(() => ({
+export const StyledContainer = styled(Stack)(({ theme }) => ({
   maxWidth: '992px',
   width: '100%',
-  height: '600px',
+  height: '700px',
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
+  [theme.breakpoints.down('md')]: {
+    height: '100vh',
+  },
 }));
 
 export const StyledImage = styled('img')(() => ({
@@ -18,11 +21,14 @@ export const StyledImage = styled('img')(() => ({
   top: 0,
 }));
 
-export const StyledImgContainer = styled(Stack)(() => ({
+export const StyledImgContainer = styled(Stack)(({ theme }) => ({
   position: 'absolute',
   width: '100%',
-  height: '600px',
+  height: '700px',
   top: 0,
+  [theme.breakpoints.down('md')]: {
+    height: '100vh',
+  },
 }));
 
 export const StyledVideo = styled('video')(() => ({
@@ -42,10 +48,4 @@ export const StyledTextContainer = styled(Stack)(() => ({
   justifyContent: 'flex-end',
   paddingBottom: '20px',
   alignItems: 'flex-end',
-  // [theme.breakpoints.down('md')]: {
-  //   alignItems: 'center',
-  // },
-  // [theme.breakpoints.down('sm')]: {
-  //   height: '400px',
-  // },
 }));

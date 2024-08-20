@@ -3,15 +3,12 @@ import Stack from '@mui/material/Stack';
 
 export const StyledContainer = styled(Stack)(({ theme }) => ({
   width: '100%',
-  height: '600px',
+  height: '700px',
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
   [theme.breakpoints.down('md')]: {
-    height: '500px',
-  },
-  [theme.breakpoints.down('sm')]: {
-    height: '400px',
+    height: '100vh',
   },
 }));
 
@@ -24,15 +21,12 @@ export const StyledImgContainer = styled(Stack)(() => ({
 
 export const StyledImage = styled('img')(({ theme }) => ({
   width: '100%',
-  height: '600px',
+  height: '700px',
   objectFit: 'cover',
   objectPosition: 'top center',
   top: 0,
   [theme.breakpoints.down('md')]: {
-    height: '500px',
-  },
-  [theme.breakpoints.down('sm')]: {
-    height: '400px',
+    height: '100vh',
   },
 }));
 

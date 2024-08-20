@@ -2,18 +2,15 @@ import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import { Typography } from '@mui/material';
 
-export const StyledContainer = styled(Stack)(() => ({
+export const StyledContainer = styled(Stack)(({ theme }) => ({
   width: '100%',
-  height: '600px',
+  height: '700px',
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  // [theme.breakpoints.down('md')]: {
-  //   height: '500px',
-  // },
-  // [theme.breakpoints.down('sm')]: {
-  //   height: '400px',
-  // },
+  [theme.breakpoints.down('md')]: {
+    height: '100vh',
+  },
 }));
 
 export const StyledImage = styled('img')(() => ({
@@ -30,11 +27,14 @@ export const StyledImage = styled('img')(() => ({
   // },
 }));
 
-export const StyledVideoContainer = styled(Stack)(() => ({
+export const StyledVideoContainer = styled(Stack)(({ theme }) => ({
   position: 'absolute',
   width: '100%',
-  height: '600px',
+  height: '700px',
   top: 0,
+  [theme.breakpoints.down('md')]: {
+    height: '100vh',
+  },
 }));
 
 export const StyledVideo = styled('video')(() => ({
