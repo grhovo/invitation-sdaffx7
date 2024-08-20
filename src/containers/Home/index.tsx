@@ -1,6 +1,7 @@
 import { memo } from 'react';
 
 import Stack from '@mui/material/Stack';
+import Footer from '@containers/Footer';
 
 import MyStepper from './Stepper';
 // import Timer from './Timer';
@@ -11,22 +12,23 @@ import { StyledContainer } from './styled';
 import TimerSection from './TimerSection';
 import DateSection from './DateSection';
 import WaitingSection from './WaitingSection';
+import OrnamentSection from './OrnamentSection';
 
 const Home = () => (
   <StyledContainer>
     <Stack justifyContent="center" alignItems="center" zIndex="1000">
       <Banner />
-      <Stack alignItems="center" sx={{ maxWidth: '100%' }}>
+      <Stack alignItems="center" sx={{ maxWidth: '992px' }}>
         <InviteText />
         <DateSection />
         <MyStepper />
         <WaitingSection />
-        <Stack p="80px" />
+        <OrnamentSection />
         <TimerSection />
-
-        {/* <PenguinsImg /> */}
+        <Footer />
       </Stack>
     </Stack>
+
   </StyledContainer>
 );
 
