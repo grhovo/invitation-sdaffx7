@@ -23,7 +23,7 @@ const AnimatedText = () => {
                 display: 'inline-block',
                 transform: inView ? 'translateY(0)' : 'translateY(100%)',
                 opacity: inView ? 1 : 0,
-                transition: `transform 1s ease ${index * 0.3}s, opacity 1s ease ${index * 0.3}s`,
+                transition: `transform 0.6s ease ${index * 0.2}s, opacity 0.6s ease ${index * 0.2}s`,
               }}
             >
               {char}
