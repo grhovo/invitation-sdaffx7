@@ -4,33 +4,39 @@ import Stack from '@mui/material/Stack';
 import StyledTypography from '@containers/common/StyledTypography';
 
 import { steps } from './data';
-import { StyledLine, StyledLink, StyledPlaceIcon } from './styled';
+import { StyledLink } from './styled';
 
-const MyStepper = () => {
-  return (
-    <Stack maxWidth="500px" p="0 20px" mb="40px">
-      <Typography variant="h5" textTransform="uppercase" mb="16px" textAlign="center">Plans For The Day</Typography>
-      <Stepper activeStep={2} orientation="vertical" connector={<StyledLine />}>
-        {steps.map(({ icon, text, time, path, place }) => (
-          <Step key={text} sx={{ width: '100%', display: 'flex', alignItems: 'flex-start' }}>
-            <StepLabel StepIconComponent={icon}>
-              <Stack width="100%" gap="6px">
-                <StyledTypography variant="h9">{time}</StyledTypography>
-                <Typography variant="h9">{text}</Typography>
-                {place && (
-                  <Stack direction="row" gap="2px" alignItems="center">
-                    <StyledPlaceIcon />
-                    <StyledTypography variant="body3">{place}</StyledTypography>
-                  </Stack>
-                )}
-                { path && (<StyledLink variant="body3" href={path} target="_blank">See On Map</StyledLink>)}
-              </Stack>
-            </StepLabel>
-          </Step>
-        ))}
-      </Stepper>
-    </Stack>
-  );
-};
+const MyStepper = () => (
+  <Stack maxWidth="500px" p="40px 20px">
+    <StyledTypography sx={{ fontSize: '26px' }}>
+      ՕՐՎԱ ՕՐԱԳԻՐ
+    </StyledTypography>
+    <Stepper orientation="vertical" connector={<div />}>
+      {steps.map(({ icon, address, time, path, place }) => (
+        <Step
+          key={address}
+          sx={{ display: 'flex', width: '100%', alignItems: 'flex-start', justifyContent: 'flex-start' }}
+        >
+          <StepLabel
+            StepIconComponent={icon}
+            sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}
+          >
+            <Stack width="100%" gap="2px">
+              <Typography variant="h9" sx={{ fontSize: '32px', color: '#c8a663' }}>{time}</Typography>
+              <Typography sx={{ fontSize: '12px', fontWeight: 600 }}>{place}</Typography>
+              <Typography
+                color="grey"
+                sx={{ fontSize: '12px', margin: '5px 0', color: '#788B9A' }}
+              >
+                {`Հասցե՝ ${address} `}
+              </Typography>
+              { path && (<StyledLink variant="body3" href={path} target="_blank">Քարտեզ</StyledLink>)}
+            </Stack>
+          </StepLabel>
+        </Step>
+      ))}
+    </Stepper>
+  </Stack>
+);
 
 export default MyStepper;

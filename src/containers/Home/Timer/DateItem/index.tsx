@@ -1,7 +1,7 @@
 import { addZero } from '@utils/helpers';
 import Stack from '@mui/material/Stack';
 
-import { StyledText } from './styled';
+import { StyledDate, StyledText } from './styled';
 
 interface IDateItem {
   date: number;
@@ -10,11 +10,11 @@ interface IDateItem {
 
 const DateItem = ({ date, text } : IDateItem) => {
   return (
-    <Stack alignItems="center" mx="15px">
-      <StyledText variant="h2" isItalic>
+    <Stack alignItems="center" mx="15px" gap="10px">
+      <StyledDate>
         {addZero(date)}
-      </StyledText>
-      <StyledText variant="h6" isItalic>
+      </StyledDate>
+      <StyledText>
         {text}
       </StyledText>
     </Stack>

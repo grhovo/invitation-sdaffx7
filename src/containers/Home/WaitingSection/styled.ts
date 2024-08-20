@@ -1,31 +1,40 @@
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import { Typography } from '@mui/material';
-import StyledTypography from '@containers/common/StyledTypography';
 
 export const StyledContainer = styled(Stack)(() => ({
   width: '100%',
-  height: '100vh',
+  height: '600px',
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
+  // [theme.breakpoints.down('md')]: {
+  //   height: '500px',
+  // },
+  // [theme.breakpoints.down('sm')]: {
+  //   height: '400px',
+  // },
 }));
 
-export const StyledImage = styled('img')(({ theme }) => ({
-  height: '500px',
-  objectFit: 'contain',
+export const StyledImage = styled('img')(() => ({
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
   objectPosition: 'top center',
   top: 0,
-  [theme.breakpoints.down('md')]: {
-    width: '100%',
-    height: 'unset',
-  },
+  // [theme.breakpoints.down('md')]: {
+  //   height: '500px',
+  // },
+  // [theme.breakpoints.down('sm')]: {
+  //   height: '400px',
+  // },
 }));
 
 export const StyledVideoContainer = styled(Stack)(() => ({
   position: 'absolute',
   width: '100%',
-  height: '100vh',
+  height: '600px',
+  top: 0,
 }));
 
 export const StyledVideo = styled('video')(() => ({
@@ -33,39 +42,45 @@ export const StyledVideo = styled('video')(() => ({
   height: '100vh',
   objectFit: 'cover',
   outline: 'none',
-  border: 'none',
 }));
 
 export const StyledTextContainer = styled(Stack)(() => ({
   width: '100%',
-  height: '100vh',
+  height: '100%',
   position: 'absolute',
   zIndex: 10,
   background: '#1118274d',
-  color: 'white',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  gap: '32px',
+  paddingBottom: '200px',
+  // [theme.breakpoints.down('md')]: {
+  //   height: '500px',
+  // },
+  // [theme.breakpoints.down('sm')]: {
+  //   width: '100%',
+  //   height: '400px',
+  // },
 }));
 
-export const StyledTitle = styled(StyledTypography)(({ theme }) => ({
-  fontSize: '60px',
+export const StyledTitle = styled(Typography)(() => ({
+  fontSize: '48px',
   color: 'white',
   textAlign: 'center',
-  // textAlign: 'center',
-  // marginBottom: '40px',
-  // fontFamily: 'ArmAllegroU',
-  [theme.breakpoints.down('md')]: {
-    fontSize: '28px',
-  },
+  marginBottom: '40px',
+}));
+
+export const StyledTypography = styled(Typography)(() => ({
+  fontSize: '36px',
+  color: 'white',
+  textAlign: 'center',
 }));
 
 export const StyledDateTypography = styled(Typography)(() => ({
   zIndex: 10,
   position: 'absolute',
   bottom: 0,
-  fontSize: '16px',
+  fontSize: '24px',
   color: 'white',
   left: '10px',
   paddingBottom: '10px',

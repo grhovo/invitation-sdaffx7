@@ -1,13 +1,11 @@
-import { StyledIconBox, StyledImage } from '../styled';
+import { StyledImage } from '../styled';
 
 interface IIcon {
   src: string;
 }
 
 const Icon = ({ src }:IIcon) => (
-  <StyledIconBox>
-    <StyledImage src={src} alt="" />
-  </StyledIconBox>
+  <StyledImage src={src} alt="" />
 );
 
 export default Icon;

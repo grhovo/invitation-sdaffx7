@@ -2,12 +2,10 @@ import { useTimer } from 'react-timer-hook';
 import Stack from '@mui/material/Stack';
 import { Typography } from '@mui/material';
 
-import { StyledDivider } from './styled';
 import DateItem from './DateItem';
 
 const Timer = () => {
-  const now = new Date();
-  const expiryTimestamp = new Date(now.getFullYear(), 0, 24, 13, 30, 0);
+  const expiryTimestamp = new Date(2024, 8, 2, 14, 0, 0); // September 2, 2024, at 14:00 (2:00 PM)
 
   const {
     days,
@@ -17,15 +15,17 @@ const Timer = () => {
   } = useTimer({ expiryTimestamp });
 
   return (
-    <Stack py="40px">
-      <Typography>Հարսանիքին մնաց </Typography>
+    <Stack py="40px" sx={{ alignItems: 'center', gap: '10px' }}>
+      <Typography
+        sx={{ color: 'white', textAlign: 'center', fontWeight: 100, fontFamily: 'Cormorant Garamond, serif',
+        }}
+      >
+        Հարսանիքին մնացել է
+      </Typography>
       <Stack direction="row">
         <DateItem date={days} text="Օր" />
-        <StyledDivider />
         <DateItem date={hours} text="Ժամ" />
-        <StyledDivider />
         <DateItem date={minutes} text="Րոպե" />
-        <StyledDivider />
         <DateItem date={seconds} text="Վայրկյան" />
       </Stack>
     </Stack>

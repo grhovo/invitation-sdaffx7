@@ -1,10 +1,11 @@
 import { memo } from 'react';
 
 import videoSrc from '@assets/videos/banner.mp4';
+import { Stack, Typography } from '@mui/material';
 
 import {
   StyledContainer, StyledDateTypography,
-  StyledTextContainer, StyledTitle, StyledTypography, StyledVideo, StyledVideoContainer,
+  StyledTextContainer, StyledTitle, StyledVideo, StyledVideoContainer,
 } from './styled';
 
 const Banner = () => {
@@ -17,10 +18,20 @@ const Banner = () => {
         </StyledVideo>
       </StyledVideoContainer>
       <StyledTextContainer>
-        <StyledTitle className="uppercase">ԹՈՌՆԻԿ ԱՆՈՒՇ</StyledTitle>
-        <StyledTypography>
+        <Stack gap="0px">
+          <StyledTitle>Թոռնիկ Անուշ</StyledTitle>
+          {/* <StyledTitle sx={{ paddingLeft: '130px' }}>Անուշ</StyledTitle> */}
+        </Stack>
+        <Typography
+          sx={{
+            // fontFamily: 'serif !important',
+            fontSize: '20px',
+            color: 'white',
+            textAlign: 'center',
+          }}
+        >
           Հարսանյաց հրավեր
-        </StyledTypography>
+        </Typography>
       </StyledTextContainer>
       <StyledDateTypography>
         Սեպտեմբեր 2, 2024

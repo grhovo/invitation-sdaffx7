@@ -11,8 +11,8 @@ interface StyledMuiTypographyProps{
 
 export const StyledMuiTypography = styled(Typography, {
   shouldForwardProp: (prop) => prop !== 'color' && prop !== 'underLine' && prop !== 'isItalic',
-})<StyledMuiTypographyProps>(({ theme, color = 'black', underLine = false, isItalic }) => ({
+})<StyledMuiTypographyProps>(({ theme, color = 'black', underLine = false }) => ({
   color: gettingColor(color, theme),
   textDecoration: underLine ? 'underline' : 'none',
-  fontFamily: isItalic ? 'Marck Script, cursive' : '',
+  fontFamily: 'CosiArm, ArmAllegro!important',
 }));
