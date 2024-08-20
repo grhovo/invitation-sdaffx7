@@ -13,7 +13,7 @@ const Banner = () => {
   return (
     <StyledContainer>
       <StyledVideoContainer>
-        <StyledVideo autoPlay loop muted>
+        <StyledVideo autoPlay loop muted playsInline>
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </StyledVideo>
