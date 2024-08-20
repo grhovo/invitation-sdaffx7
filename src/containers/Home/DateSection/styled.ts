@@ -2,18 +2,12 @@ import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 
 export const StyledContainer = styled(Stack)(() => ({
-  maxWidth: '900px',
+  maxWidth: '992px',
   width: '100%',
   height: '600px',
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  // [theme.breakpoints.down('md')]: {
-  //   height: '500px',
-  // },
-  // [theme.breakpoints.down('sm')]: {
-  //   height: '400px',
-  // },
 }));
 
 export const StyledImage = styled('img')(() => ({

@@ -4,6 +4,7 @@ import videoSrc from '@assets/videos/banner.mp4';
 import { Stack, Typography } from '@mui/material';
 
 import {
+  StyledBackTitle,
   StyledContainer, StyledDateTypography,
   StyledTextContainer, StyledTitle, StyledVideo, StyledVideoContainer,
 } from './styled';
@@ -18,13 +19,12 @@ const Banner = () => {
         </StyledVideo>
       </StyledVideoContainer>
       <StyledTextContainer>
-        <Stack gap="0px">
+        <Stack gap="0px" sx={{ position: 'relative' }}>
           <StyledTitle>Թոռնիկ Անուշ</StyledTitle>
-          {/* <StyledTitle sx={{ paddingLeft: '130px' }}>Անուշ</StyledTitle> */}
+          <StyledBackTitle>ԵՎ</StyledBackTitle>
         </Stack>
         <Typography
           sx={{
-            // fontFamily: 'serif !important',
             fontSize: '20px',
             color: 'white',
             textAlign: 'center',

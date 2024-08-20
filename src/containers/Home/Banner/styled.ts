@@ -16,7 +16,7 @@ export const StyledImage = styled('img')(({ theme }) => ({
   objectFit: 'contain',
   objectPosition: 'top center',
   top: 0,
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('sm')]: {
     width: '100%',
     height: 'unset',
   },
@@ -36,7 +36,7 @@ export const StyledVideo = styled('video')(() => ({
   border: 'none',
 }));
 
-export const StyledTextContainer = styled(Stack)(() => ({
+export const StyledTextContainer = styled(Stack)(({ theme }) => ({
   width: '100%',
   height: '100vh',
   position: 'absolute',
@@ -46,27 +46,41 @@ export const StyledTextContainer = styled(Stack)(() => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  gap: '32px',
+  gap: '100px',
+
+  [theme.breakpoints.down('sm')]: {
+    gap: '32px',
+  },
 }));
 
 export const StyledTitle = styled(StyledTypography)(({ theme }) => ({
   fontSize: '60px',
   color: 'white',
   textAlign: 'center',
-  // textAlign: 'center',
-  // marginBottom: '40px',
-  // fontFamily: 'ArmAllegroU',
-  [theme.breakpoints.down('md')]: {
-    fontSize: '28px',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '26px',
   },
 }));
 
+export const StyledBackTitle = styled(StyledTypography)(({ theme }) => ({
+  position: 'absolute',
+  fontSize: '160px',
+  color: 'white',
+  textAlign: 'center',
+  opacity: '30%',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '85px',
+  },
+}));
 export const StyledDateTypography = styled(Typography)(() => ({
   zIndex: 10,
   position: 'absolute',
   bottom: 0,
-  fontSize: '16px',
+  fontSize: '14px',
   color: 'white',
   left: '10px',
-  paddingBottom: '10px',
+  paddingBottom: '30px',
 }));
