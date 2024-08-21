@@ -8,7 +8,7 @@ export const StyledContainer = styled(Stack)(({ theme }) => ({
   alignItems: 'center',
   position: 'relative',
   [theme.breakpoints.down('md')]: {
-    height: '100vh',
+    height: '100dvh',
   },
 }));
 
@@ -26,13 +26,13 @@ export const StyledImage = styled('img')(({ theme }) => ({
   objectPosition: 'top center',
   top: 0,
   [theme.breakpoints.down('md')]: {
-    height: '100vh',
+    height: '100dvh',
   },
 }));
 
 export const StyledVideo = styled('video')(() => ({
   width: '100%',
-  height: '100vh',
+  height: '100dvh',
   objectFit: 'cover',
   outline: 'none',
 }));

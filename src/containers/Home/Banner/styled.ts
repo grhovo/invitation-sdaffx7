@@ -5,7 +5,7 @@ import StyledTypography from '@containers/common/StyledTypography';
 
 export const StyledContainer = styled(Stack)(() => ({
   width: '100%',
-  height: '100vh',
+  height: '100dvh',
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
@@ -25,12 +25,12 @@ export const StyledImage = styled('img')(({ theme }) => ({
 export const StyledVideoContainer = styled(Stack)(() => ({
   position: 'absolute',
   width: '100%',
-  height: '100vh',
+  height: '100dvh',
 }));
 
 export const StyledVideo = styled('video')(() => ({
   width: '100%',
-  height: '100vh',
+  height: '100dvh',
   objectFit: 'cover',
   outline: 'none',
   border: 'none',
@@ -38,7 +38,7 @@ export const StyledVideo = styled('video')(() => ({
 
 export const StyledTextContainer = styled(Stack)(({ theme }) => ({
   width: '100%',
-  height: '100vh',
+  height: '100dvh',
   position: 'absolute',
   zIndex: 10,
   background: '#1118274d',
