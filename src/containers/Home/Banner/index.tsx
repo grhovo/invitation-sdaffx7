@@ -8,6 +8,7 @@ import {
   StyledContainer, StyledDateTypography,
   StyledTextContainer, StyledTitle, StyledVideo, StyledVideoContainer,
 } from './styled';
+import AudioPlayer from './Audio';
 
 const Banner = () => {
   return (
@@ -19,6 +20,7 @@ const Banner = () => {
         </StyledVideo>
       </StyledVideoContainer>
       <StyledTextContainer>
+        <AudioPlayer />
         <Stack gap="0px" sx={{ position: 'relative' }}>
           <StyledTitle>Թոռնիկ Անուշ</StyledTitle>
           <StyledBackTitle>ԵՎ</StyledBackTitle>
